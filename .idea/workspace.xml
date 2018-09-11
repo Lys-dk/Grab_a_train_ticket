@@ -1,37 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caa34f4e-53ba-4a2d-96d3-fa43e0718b07" name="Default" comment="把测试和业务分开，之前的太乱">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/grabticket/fastJson.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/test/httpTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Http/fastJson.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Http/Data.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Http/JsonRootBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Http/MyMojo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Http/SeatList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Http/TrainArrStations.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Http/TrainDeptStations.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Http/TrainInfos.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Http/fastJson.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Http/httpTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Http/httppost.class" afterPath="" />
+    <list default="true" id="caa34f4e-53ba-4a2d-96d3-fa43e0718b07" name="Default" comment="把测试和业务分开，之前写的太乱">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/http.iml" afterPath="$PROJECT_DIR$/http.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Http/Data.java" afterPath="$PROJECT_DIR$/src/main/java/grabticket/jsonBean/Data.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Http/JsonRootBean.java" afterPath="$PROJECT_DIR$/src/main/java/grabticket/jsonBean/JsonRootBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Http/MyHttpClient.java" afterPath="$PROJECT_DIR$/src/main/java/grabticket/Http/MyHttpClient.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Http/MyMojo.java" afterPath="$PROJECT_DIR$/src/main/java/grabticket/jsonBean/MyMojo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Http/SeatList.java" afterPath="$PROJECT_DIR$/src/main/java/grabticket/jsonBean/SeatList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Http/TrainArrStations.java" afterPath="$PROJECT_DIR$/src/main/java/grabticket/jsonBean/TrainArrStations.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Http/TrainDeptStations.java" afterPath="$PROJECT_DIR$/src/main/java/grabticket/jsonBean/TrainDeptStations.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Http/TrainInfos.java" afterPath="$PROJECT_DIR$/src/main/java/grabticket/jsonBean/TrainInfos.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Http/httpTest.java" afterPath="$PROJECT_DIR$/src/main/java/grabticket/httpTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Http/httppost.java" afterPath="$PROJECT_DIR$/src/main/java/grabticket/httppost.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -73,8 +44,8 @@
       <file leaf-file-name="MyMojo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/grabticket/jsonBean/MyMojo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="-829">
+              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -734,7 +705,7 @@
       <workItem from="1536566336431" duration="4396000" />
       <workItem from="1536571507065" duration="7023000" />
       <workItem from="1536645921969" duration="4343000" />
-      <workItem from="1536653338289" duration="5032000" />
+      <workItem from="1536653338289" duration="5458000" />
     </task>
     <task id="LOCAL-00001" summary="把post请求单独写出来">
       <created>1536655515922</created>
@@ -750,7 +721,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536655918508</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="把测试和业务分开，之前写的太乱">
+      <created>1536658434535</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536658434535</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -768,15 +746,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28385000" />
+    <option name="totallyTimeSpent" value="28811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3660856" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4896989" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -787,7 +764,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2035139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2035139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -811,7 +788,8 @@
     <MESSAGE value="把post请求单独写出来" />
     <MESSAGE value="把get请求单独写出来" />
     <MESSAGE value="把测试和业务分开，之前的太乱" />
-    <option name="LAST_COMMIT_MESSAGE" value="把测试和业务分开，之前的太乱" />
+    <MESSAGE value="把测试和业务分开，之前写的太乱" />
+    <option name="LAST_COMMIT_MESSAGE" value="把测试和业务分开，之前写的太乱" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1107,8 +1085,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/grabticket/jsonBean/MyMojo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+        <state relative-caret-position="-829">
+          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
           <folding />
         </state>
       </provider>
