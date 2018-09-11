@@ -21,32 +21,8 @@ public class httpTest {
     static String TOKEN =null;
     public static void main(String[] args) {
 //        readJson1(getjson());
-        getjson();
     }
 
-    public static String getjson(){
-
-        HttpClient httpClient = new DefaultHttpClient();
-        String url = "http://api.12306.com/v1/train/trainInfos?" +
-                "arrStationCode=GZQ&deptDate=2018-09-18&deptStationCode=SZQ&findGD=false";
-        HttpGet httpGet = new HttpGet(url);
-        String result=null;
-        HttpResponse httpResponse = null;
-        HttpEntity entity  = null;
-        try {
-            httpResponse = httpClient.execute(httpGet);
-            StatusLine statusLine  = httpResponse.getStatusLine();
-            if(statusLine.getStatusCode()==200){
-                entity = httpResponse.getEntity();
-                result = EntityUtils.toString(entity);
-//                TOKEN = httpResponse.getFirstHeader().g
-            }
-            System.out.println(statusLine.getStatusCode());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return result;
-    }
 
     public static void readJson(String jsonStr){
         System.out.println(jsonStr);

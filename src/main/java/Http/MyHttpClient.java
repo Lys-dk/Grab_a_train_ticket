@@ -9,13 +9,13 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
-import java.util.Map;
 
 public class MyHttpClient {
 
+    /*
+        返回entity，用来fastjson来解析
+     */
     public String HttpGet(String url){
-
-
         HttpClient httpClient = new DefaultHttpClient();
         HttpGet httpGet = new HttpGet(url);
         String result=null;
@@ -27,13 +27,12 @@ public class MyHttpClient {
             if(statusLine.getStatusCode()==200){
                 entity = httpResponse.getEntity();
                 result = EntityUtils.toString(entity);
-//                TOKEN = httpResponse.getFirstHeader().g
             }
             System.out.println(statusLine.getStatusCode());
         } catch (IOException e) {
             e.printStackTrace();
         }
         return result;
-
     }
+
 }
