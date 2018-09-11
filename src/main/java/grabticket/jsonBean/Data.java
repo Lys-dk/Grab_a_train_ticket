@@ -1,7 +1,8 @@
 /**
   * Copyright 2018 bejson.com 
   */
-package Http;
+package grabticket.jsonBean;
+
 import java.util.List;
 
 /**

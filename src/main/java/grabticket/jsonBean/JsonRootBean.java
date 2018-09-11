@@ -1,7 +1,7 @@
 /**
   * Copyright 2018 bejson.com 
   */
-package Http;
+package grabticket.jsonBean;
 
 /**
  * Auto-generated: 2018-09-10 15:42:52

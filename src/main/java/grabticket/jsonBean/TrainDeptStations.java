@@ -1,7 +1,7 @@
 /**
   * Copyright 2018 bejson.com 
   */
-package Http;
+package grabticket.jsonBean;
 
 /**
  * Auto-generated: 2018-09-10 15:42:52
@@ -9,7 +9,7 @@ package Http;
  * @author bejson.com (i@bejson.com)
  * @website http://www.bejson.com/java2pojo/
  */
-public class TrainArrStations {
+public class TrainDeptStations {
 
     private String cityCode;
     private String cityName;

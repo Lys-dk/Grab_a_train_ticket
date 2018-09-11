@@ -1,4 +1,4 @@
-package Http;
+package grabticket.Http;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -35,8 +35,9 @@ public class MyHttpClient {
             if(statusLine.getStatusCode()==200){
                 entity = httpResponse.getEntity();
                 result = EntityUtils.toString(entity);
+            }else {
+                result="«Î«Û¥ÌŒÛ,«ÎºÏ≤È";
             }
-            System.out.println(statusLine.getStatusCode());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -75,7 +76,6 @@ public class MyHttpClient {
         HttpEntity entity = response.getEntity();
         try {
              result = EntityUtils.toString(entity);
-            System.out.println(result);
         } catch (IOException e) {
             e.printStackTrace();
         }
