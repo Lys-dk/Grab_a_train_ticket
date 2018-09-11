@@ -44,8 +44,8 @@
       <file leaf-file-name="MyMojo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/grabticket/jsonBean/MyMojo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-829">
-              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+            <state relative-caret-position="341">
+              <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -705,7 +705,7 @@
       <workItem from="1536566336431" duration="4396000" />
       <workItem from="1536571507065" duration="7023000" />
       <workItem from="1536645921969" duration="4343000" />
-      <workItem from="1536653338289" duration="5458000" />
+      <workItem from="1536653338289" duration="5567000" />
     </task>
     <task id="LOCAL-00001" summary="把post请求单独写出来">
       <created>1536655515922</created>
@@ -728,7 +728,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536658434535</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="把测试和业务分开，之前写的太乱">
+      <created>1536658895934</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536658895934</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -746,7 +753,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28811000" />
+    <option name="totallyTimeSpent" value="28920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1085,8 +1092,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/grabticket/jsonBean/MyMojo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-829">
-          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state relative-caret-position="341">
+          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
           <folding />
         </state>
       </provider>
