@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.codehaus.groovy:groovy-all:1.5.6-osgi">
+    <CLASSES>
+      <root url="jar://E:/soft/maven/repository/.m2/.m2/org/codehaus/groovy/groovy-all/1.5.6-osgi/groovy-all-1.5.6-osgi.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/soft/maven/repository/.m2/.m2/org/codehaus/groovy/groovy-all/1.5.6-osgi/groovy-all-1.5.6-osgi-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/soft/maven/repository/.m2/.m2/org/codehaus/groovy/groovy-all/1.5.6-osgi/groovy-all-1.5.6-osgi-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

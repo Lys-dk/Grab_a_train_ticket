@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="E:/yuanianProject/e7-fssc7.0_LOVOL/e7-fssc7.0_LOVOL" vcs="svn" />
   </component>
 </project>

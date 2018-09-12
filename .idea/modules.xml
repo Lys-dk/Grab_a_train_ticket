@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../E7FSSC/E7FSSC/e7-fssc.iml" filepath="$PROJECT_DIR$/../E7FSSC/E7FSSC/e7-fssc.iml" />
+      <module fileurl="file://E:/yuanianProject/e7-fssc7.0_LOVOL/e7-fssc7.0_LOVOL/e7-fssc (1).iml" filepath="E:/yuanianProject/e7-fssc7.0_LOVOL/e7-fssc7.0_LOVOL/e7-fssc (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/http.iml" filepath="$PROJECT_DIR$/http.iml" />
     </modules>
   </component>

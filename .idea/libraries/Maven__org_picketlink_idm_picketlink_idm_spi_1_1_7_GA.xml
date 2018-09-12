@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.picketlink.idm:picketlink-idm-spi:1.1.7.GA">
+    <CLASSES>
+      <root url="jar://E:/soft/maven/repository/.m2/.m2/org/picketlink/idm/picketlink-idm-spi/1.1.7.GA/picketlink-idm-spi-1.1.7.GA.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/soft/maven/repository/.m2/.m2/org/picketlink/idm/picketlink-idm-spi/1.1.7.GA/picketlink-idm-spi-1.1.7.GA-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/soft/maven/repository/.m2/.m2/org/picketlink/idm/picketlink-idm-spi/1.1.7.GA/picketlink-idm-spi-1.1.7.GA-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -6,10 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="e7-fssc" />
+        <module name="e7-fssc (1)" />
         <module name="http" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="e7-fssc" target="1.6" />
+      <module name="e7-fssc (1)" target="1.6" />
       <module name="http" target="1.5" />
     </bytecodeTargetLevel>
   </component>

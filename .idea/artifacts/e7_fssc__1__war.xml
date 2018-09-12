@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="e7-fssc (1):war">
+    <output-path>E:/yuanianProject/e7-fssc7.0_LOVOL/e7-fssc7.0_LOVOL/target</output-path>
+    <root id="archive" name="e7-fssc.war">
+      <element id="artifact" artifact-name="e7-fssc (1):war exploded" />
+    </root>
+  </artifact>
+</component>

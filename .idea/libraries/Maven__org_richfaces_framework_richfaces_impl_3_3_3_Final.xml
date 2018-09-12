@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.richfaces.framework:richfaces-impl:3.3.3.Final">
+    <CLASSES>
+      <root url="jar://E:/soft/maven/repository/.m2/.m2/org/richfaces/framework/richfaces-impl/3.3.3.Final/richfaces-impl-3.3.3.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/soft/maven/repository/.m2/.m2/org/richfaces/framework/richfaces-impl/3.3.3.Final/richfaces-impl-3.3.3.Final-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/soft/maven/repository/.m2/.m2/org/richfaces/framework/richfaces-impl/3.3.3.Final/richfaces-impl-3.3.3.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
