@@ -6,12 +6,7 @@ package grabticket.jsonBean;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Auto-generated: 2018-09-10 15:42:52
- *
- * @author bejson.com (i@bejson.com)
- * @website http://www.bejson.com/java2pojo/
- */
+
 public class TrainInfos {
 
     private String trainCode;
@@ -34,7 +29,7 @@ public class TrainInfos {
     private String source;
     private String ywXiaPrice;
     private String rwXiaPrice;
-    private List<SeatList> seatList;
+    private List<Seat> seatList;
     private boolean endStation;
     private boolean startStation;
     private boolean sellOut;
@@ -180,10 +175,10 @@ public class TrainInfos {
          return rwXiaPrice;
      }
 
-    public void setSeatList(List<SeatList> seatList) {
+    public void setSeatList(List<Seat> seatList) {
          this.seatList = seatList;
      }
-     public List<SeatList> getSeatList() {
+     public List<Seat> getSeatList() {
          return seatList;
      }
 

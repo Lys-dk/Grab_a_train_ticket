@@ -5,12 +5,7 @@ package grabticket.jsonBean;
 
 import java.util.List;
 
-/**
- * Auto-generated: 2018-09-10 15:42:52
- *
- * @author bejson.com (i@bejson.com)
- * @website http://www.bejson.com/java2pojo/
- */
+
 public class Data {
 
     private List<TrainInfos> trainInfos;

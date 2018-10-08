@@ -1,35 +1,46 @@
 package test;
 
-import grabticket.Http.MyHttpClient;
-import com.alibaba.fastjson.JSON;
-import org.junit.Test;
+import org.json.JSONObject;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.Map;
+
+
 
 public class httpTest {
 
-    @Test
-    public void postTest(){
-        MyHttpClient hc = new MyHttpClient();
-        String url = "http://api.12306.com/oauth/token";
-        Map<String,String> map = new HashMap<String,String>();
-        map.put("client_id","client");
-        map.put("client_secret","secret");
-        map.put("grant_type","password");
-        map.put("password","57261d835a6d6a03f68b4ae024cd8765");
-        map.put("username","18527305901");
-        String resutlt = hc.httpPost(url,map);
-        System.out.println(resutlt);
+    static String TOKEN =null;
+    public static void main(String[] args) {
+
     }
 
-    @Test
-    public  void getTest(){
-        MyHttpClient hc = new MyHttpClient();
-        String url ="http://api.12306.com/v1/train/trainInfos?"+
-                "arrStationCode=GZQ&deptDate=2018-09-17&deptStationCode=SZQ&findGD=false";
-        String result=hc.HttpGet(url);
-        JSON h = JSON.parseObject(result);
-        System.out.println(h.toString());
+
+    public static void readJson(String jsonStr){
+        System.out.println(jsonStr);
+            JSONObject jsonObject = new JSONObject(jsonStr);
+            Map<String,Object > map= jsonObject.toMap();
+//            Map<String,Object> map1=jsonObject.getJSONObject("data").toMap();
+            Map<String,Object> data = (Map<String, Object>) map.get("data");
+//            JSONObject trainDeptStations = new JSONObject(data.get("trainDeptStations"));
+             ArrayList<String> trainDeptStations = (ArrayList<String>) data.get("trainDeptStations");
+
+             for (int i=0;i<trainDeptStations.size();i++){
+            String cityName=  trainDeptStations.get(i);
+            System.out.println(cityName);
+        }
+
+    }
+
+    public static  void readJson1(String jsonStr){
+        JSONObject jsonObject = new JSONObject(jsonStr);
+        JSONObject dataJson=jsonObject.getJSONObject("data");
+        Map<String, Object> trainInfos = dataJson.toMap();
+       Map<String,Object> trainDeptStations = (Map<String, Object>) trainInfos.get(trainInfos);
+        ArrayList<String> cityNameArray = (ArrayList<String>) trainDeptStations.get("trainDeptStations");
+
+    }
+
+    public static void fastJsonTest(String jsonStr){
+
     }
 }

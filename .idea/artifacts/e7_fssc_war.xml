@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="e7-fssc:war">
-    <output-path>$PROJECT_DIR$/../E7FSSC/E7FSSC/target</output-path>
+    <output-path>E:/yuanianProject/E7-FSSCV7.0.20180702.01/E7-FSSCV7.0.20180702.01/target</output-path>
     <root id="archive" name="e7-fssc.war">
       <element id="artifact" artifact-name="e7-fssc:war exploded" />
     </root>

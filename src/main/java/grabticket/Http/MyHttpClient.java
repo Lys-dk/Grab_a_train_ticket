@@ -8,6 +8,7 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
@@ -19,11 +20,8 @@ import java.util.List;
 import java.util.Map;
 
 public class MyHttpClient {
-
-    /*
-        ∑µªÿentity£¨”√¿¥fastjson¿¥Ω‚Œˆ
-     */
     public String HttpGet(String url){
+        System.out.println("ËØ∑Ê±Çurl:"+url);
         HttpClient httpClient = new DefaultHttpClient();
         HttpGet httpGet = new HttpGet(url);
         String result=null;
@@ -36,7 +34,7 @@ public class MyHttpClient {
                 entity = httpResponse.getEntity();
                 result = EntityUtils.toString(entity);
             }else {
-                result="«Î«Û¥ÌŒÛ,«ÎºÏ≤È";
+                result="???????";
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -45,13 +43,13 @@ public class MyHttpClient {
     }
 
     /*
-        ∏∫‘¥¶¿Ìpost«Î«Û
+
      */
-    public String httpPost(String url,Map<String,String> param){
+    public String httpPost(String url,Map<String,String> param,String json){
 
         HttpClient httpClient = new DefaultHttpClient();
         HttpPost httpPost = new HttpPost(url);
-        String result=null;                         //responµƒ ˝æ›
+        String result=null;
         List<NameValuePair> nvp = new ArrayList<NameValuePair>();
         if(param!=null){
             for(Map.Entry<String,String> entry: param.entrySet()){
@@ -59,13 +57,28 @@ public class MyHttpClient {
             }
         }
         try {
-            httpPost.setEntity(new UrlEncodedFormEntity(nvp, "utf-8"));
+            if(param!=null){
+                httpPost.setEntity(new UrlEncodedFormEntity(nvp, "utf-8"));
+            }
+            else{
+                StringEntity entity = new StringEntity(json,"utf-8");
+                httpPost.setEntity(entity);
+            }
+
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        System.out.println("«Î«Ûµÿ÷∑£∫"+url);
-        System.out.println("«Î«Û≤Œ ˝£∫"+nvp.toString());
-        httpPost.setHeader("Content-type", "application/x-www-form-urlencoded");
+        System.out.println("ËØ∑Ê±Çurl:"+url);
+
+
+        if(param!=null){
+            System.out.println("ËØ∑Ê±ÇÂèÇÊï∞Ôºö"+nvp.toString());
+            httpPost.setHeader("Content-type", "application/x-www-form-urlencoded");
+        }else{
+            System.out.println("ËØ∑Ê±ÇÂèÇÊï∞Ôºö"+json);
+            httpPost.setHeader("Content-type", "application/json");
+        }
+
         httpPost.setHeader("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
         HttpResponse response=null;
         try {
@@ -75,11 +88,10 @@ public class MyHttpClient {
         }
         HttpEntity entity = response.getEntity();
         try {
-             result = EntityUtils.toString(entity);
+            result = EntityUtils.toString(entity);
         } catch (IOException e) {
             e.printStackTrace();
         }
         return result;
     }
-
 }
