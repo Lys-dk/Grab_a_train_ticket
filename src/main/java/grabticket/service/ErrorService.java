@@ -10,7 +10,7 @@ public class ErrorService {
         }
         if (map.containsKey("code")) {
             if (map.get("code").equals("00001")) {
-                System.out.println("错误信息为" + map.get("message"));
+                System.out.println("错误信息为：" + map.get("message"));
                 System.out.println("请根据错误信息更改");
                 System.exit(0);
             } else if (map.get("code").equals("00005")) {

@@ -15,10 +15,11 @@ public class OrderService {
 
 
     ErrorService error = new ErrorService();
+    TrainService trainService = new TrainService();
+
     public String  order(String access_token,String orderNo){
-        ServiceForTrain sft = new  ServiceForTrain();
         MyHttpClient Client  = new MyHttpClient();
-        String body = sft.body();
+        String body = trainService.body();
         StringBuffer url = new StringBuffer();
         url.append("http://api.12306.com/v1/train/order?access_token=");
         url.append(access_token);
@@ -92,9 +93,8 @@ public class OrderService {
     public Map getOrderInfo(String seatName,String time){
 
 
-        ServiceForTrain sft = new  ServiceForTrain();
         Map<String,Object > map = new HashMap<String, Object>();
-        TrafficInformation tif = sft.Search();
+        TrafficInformation tif = trainService.Search();
         Data data = tif.getData();
         List<TrainInfos> trainInfosList = data.getTrainInfos();
         List<Seat> seatList = null;
@@ -110,7 +110,10 @@ public class OrderService {
                 }
             }
         }
-
+        if(map.size()==0){
+            System.out.println("没有相应的座位，请重新填写");
+            System.exit(0);
+        }
         return map;
     }
 }

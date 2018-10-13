@@ -1,13 +1,7 @@
 package grabticket.pojo;
 
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 
-
-@Configuration
-@PropertySource(value = "classpath:user.properties", encoding = "UTF-8")
 public class User {
 
     public static void main(String[] args) {
@@ -16,10 +10,9 @@ public class User {
         System.out.println(u.getPassword());
     }
 
-    @Value("${name}")
+
     String name;
 
-    @Value("${password}")
     String password;
 
     public String getName() {

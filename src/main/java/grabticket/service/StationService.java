@@ -9,6 +9,11 @@ import java.util.Map;
 public class StationService {
 
 
+
+    /*
+     访问http://api.12306.com/v1/train/stations,就可以获取所有城市的编码
+     然后遍历，查找所需要城市的编码
+      */
     public static String  getCityCode( String cityName) {
         String url = "http://api.12306.com/v1/train/stations";
         ErrorService error = new ErrorService();
@@ -24,6 +29,8 @@ public class StationService {
                 return (String) map.get("cityCode");
             }
         }
-        return "输入城市有误，请重新检查";
+        System.out.println("请检查配置文件，查看始发站和终点站是否填写正确");
+        System.exit(0);
+        return null;
     }
 }

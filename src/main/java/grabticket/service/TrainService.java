@@ -9,11 +9,13 @@ import grabticket.pojo.Passengers;
 import grabticket.util.Propertys;
 
 import java.util.Map;
+import java.util.Properties;
 
 public class TrainService {
 
     MyHttpClient Client = new MyHttpClient();
     StationService station  = new StationService();
+    Properties prop = new Properties();
 
     public TrafficInformation Search(){
 
@@ -44,7 +46,10 @@ public class TrainService {
     */
     public String body(){
         OrderService order = new OrderService();
-        Map map = order.getOrderInfo("硬座",null);
+
+        String seatName = Propertys.properties().getProperty("seatName");
+        Map map = order.getOrderInfo(Propertys.properties().getProperty("seatName"),null);
+
         TrainInfos trainInfos = (TrainInfos) map.get("TrainInfos");
         Seat seat= (Seat) map.get("Seat");
         Passengers passenger= getPassengers();
@@ -64,7 +69,7 @@ public class TrainService {
 
         //出发时间
         sb.append("\"deptDate\":");
-        sb.append("\""     +"2018-10-9"   +"\",");
+        sb.append("\""     +Propertys.properties().getProperty("date")   +"\",");
 
         //座位价格
         sb.append("\"seatPrice\":");

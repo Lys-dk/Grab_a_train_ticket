@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Properties;
 
 /*
-    ��ȡ�����ļ�
+    获取配置的信息
  */
 public class Propertys {
 
@@ -20,14 +20,14 @@ public class Propertys {
     }
 
     /*
-     ��ȡuser.properties�����ļ�
+    读取user配置文件
      */
     public static User userProperty(){
         User user = new User();
         Properties prop = new Properties();
         try{
             InputStream in = new BufferedInputStream(new FileInputStream("src/main/resources/user.properties"));
-            prop.load(new InputStreamReader(in, "utf-8"));     ///���������б�
+            prop.load(new InputStreamReader(in, "utf-8"));
 
             Iterator<String> it=prop.stringPropertyNames().iterator();
             user.setName(prop.getProperty("name"));
@@ -40,6 +40,9 @@ public class Propertys {
         return user;
     }
 
+    /*
+    获取乘客配置信息
+     */
     public static Properties properties(){
 
       Passengers passengers = new Passengers();
