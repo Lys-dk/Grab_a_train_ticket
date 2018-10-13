@@ -2,13 +2,11 @@ package grabticket.service;
 
 import com.alibaba.fastjson.JSONObject;
 import grabticket.Http.MyHttpClient;
-import grabticket.util.ErrorService;
 
 import java.util.List;
 import java.util.Map;
 
-public class Station {
-
+public class StationService {
 
 
     public static String  getCityCode( String cityName) {

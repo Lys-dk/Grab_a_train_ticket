@@ -2,14 +2,13 @@ package grabticket.service;
 
 import com.alibaba.fastjson.JSONObject;
 import grabticket.Http.MyHttpClient;
-import grabticket.util.ErrorService;
 import grabticket.util.MD5Utils;
 import grabticket.util.Propertys;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Login {
+public class LoginService {
 
     public String login(){
         MyHttpClient hc = new MyHttpClient();

@@ -6,13 +6,12 @@ import grabticket.jsonBean.Data;
 import grabticket.jsonBean.Seat;
 import grabticket.jsonBean.TrafficInformation;
 import grabticket.jsonBean.TrainInfos;
-import grabticket.util.ErrorService;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Order {
+public class OrderService {
 
 
     ErrorService error = new ErrorService();
@@ -31,7 +30,7 @@ public class Order {
 
             resultMap = (Map) JSONObject.parse(result);
 
-            //拿到返回的结果，先交给ErrorService
+            //拿到返回的结果，先交给ErrorService，判断返回的数据是否正确
             error.error(resultMap);
 
         System.out.println();
@@ -75,9 +74,9 @@ public class Order {
             }else if(statusText.equals("占座失败")){
 
                 orderNo=null;
-                Login login = new Login();
+                LoginService login = new LoginService();
                 login.login();
-                Order order = new Order();
+                OrderService order = new OrderService();
                 orderNo= order.order(access_token,orderNo);
                 System.out.println("占座失败,重新下单");
                 PlaceTheOrder(access_token,orderNo);

@@ -35,12 +35,8 @@ public class httpTest {
         JSONObject jsonObject = new JSONObject(jsonStr);
         JSONObject dataJson=jsonObject.getJSONObject("data");
         Map<String, Object> trainInfos = dataJson.toMap();
-       Map<String,Object> trainDeptStations = (Map<String, Object>) trainInfos.get(trainInfos);
+         Map<String,Object> trainDeptStations = (Map<String, Object>) trainInfos.get(trainInfos);
         ArrayList<String> cityNameArray = (ArrayList<String>) trainDeptStations.get("trainDeptStations");
-
-    }
-
-    public static void fastJsonTest(String jsonStr){
 
     }
 }
