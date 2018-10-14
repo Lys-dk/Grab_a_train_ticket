@@ -1,12 +1,14 @@
 package grabticket.service;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import grabticket.Http.MyHttpClient;
 import grabticket.jsonBean.Seat;
 import grabticket.jsonBean.TrafficInformation;
 import grabticket.jsonBean.TrainInfos;
 import grabticket.pojo.Passengers;
 import grabticket.util.Propertys;
+import main.Run;
 
 import java.util.Map;
 import java.util.Properties;
@@ -16,7 +18,12 @@ public class TrainService {
     MyHttpClient Client = new MyHttpClient();
     StationService station  = new StationService();
     Properties prop = new Properties();
+    ErrorService errorService = new ErrorService();
 
+
+    /*
+    查询是否有座位
+     */
     public TrafficInformation Search(){
 
         String fromCity = Propertys.properties().getProperty("fromCity");
@@ -35,6 +42,16 @@ public class TrainService {
         url.append(toCityCode);
         url.append("&findGD=false");
         String result=Client.HttpGet(url.toString());
+
+        System.out.println("返回结果："+result);
+        Map resultMap = (Map) JSONObject.parse(result);
+        errorService.error(resultMap);
+        if(resultMap.get("data").equals("")){
+            System.out.println("----------------------");
+            System.out.println("--------重新开始---------");
+            Run run = new Run();
+            run.run();
+        }
         TrafficInformation trafficInformation = JSON.parseObject(result,TrafficInformation.class);
         JSON h = JSON.parseObject(result);
 

@@ -23,11 +23,11 @@ public class LoginService {
         map.put("grant_type","password");
         map.put("password", MD5Utils.md5(Propertys.userProperty().getPassword()));
         map.put("username",Propertys.userProperty().getName());
-        String resutlt = hc.httpPost(url,map,null);
-        Map resultMap = (Map) JSONObject.parse(resutlt);
+        String result = hc.httpPost(url,map,null);
+        Map resultMap = (Map) JSONObject.parse(result);
         loginEror.error(resultMap);
         String  access_token = (String) resultMap.get("access_token");
-        System.out.println("login:"+resutlt);
+        System.out.println("login:"+result);
         return access_token;
     }
 }

@@ -47,7 +47,6 @@ public class OrderService {
     public void PlaceTheOrder(String access_token,String orderNo){
 
         MyHttpClient Client = new MyHttpClient();
-
         StringBuffer url = new StringBuffer();
         url.append("http://api.12306.com/v1/train/order-detail/");
         url.append(orderNo);
@@ -95,7 +94,9 @@ public class OrderService {
 
         Map<String,Object > map = new HashMap<String, Object>();
         TrafficInformation tif = trainService.Search();
+
         Data data = tif.getData();
+
         List<TrainInfos> trainInfosList = data.getTrainInfos();
         List<Seat> seatList = null;
         Seat seat = new Seat();

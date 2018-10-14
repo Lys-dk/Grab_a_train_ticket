@@ -46,7 +46,6 @@ public class MyHttpClient {
 
      */
     public String httpPost(String url,Map<String,String> param,String json){
-
         HttpClient httpClient = new DefaultHttpClient();
         HttpPost httpPost = new HttpPost(url);
         String result=null;
